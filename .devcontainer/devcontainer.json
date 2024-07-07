@@ -1,0 +1,11 @@
+{
+    "name": "MyOS Development Environment",
+    "dockerFile": "Dockerfile",
+    "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+    "settings": {},
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-python.python"
+    ],
+    "postCreateCommand": "sudo apt update && sudo apt install -y qemu gcc nasm grub-pc-bin xorriso"
+  }
