@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
 
 # Install required packages
 RUN apt-get update && apt-get install -y \
-    qemu \
+    qemu-system-x86 \
     gcc \
     nasm \
     grub-pc-bin \
